@@ -14,10 +14,11 @@ public class Banco {
         lista.add(empresa);
         lista.add(empresa2);
     }
-    public void adiciona(Empresa empresa) {
+    public void add(Empresa empresa) {
         lista.add(empresa);
     }
-    public List<Empresa> getEmpresas(){
-        return Banco.lista;
+
+    public List<Empresa> getLista() {
+        return lista;
     }
 }

@@ -12,7 +12,8 @@
 </head>
 <body>
 
-    <form action="novaEmpresa">
+    <form action="novaEmpresa" method="POST">
+
         Nome: <label> <input type="text" name="nome" />   </label>
         <input type="submit"/>
     </form>

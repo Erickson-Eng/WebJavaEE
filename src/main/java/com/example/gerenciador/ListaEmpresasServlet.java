@@ -12,7 +12,7 @@ public class ListaEmpresasServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Banco banco = new Banco();
-        List<Empresa> lista = banco.getEmpresas();
+        List<Empresa> lista = banco.getLista();
         PrintWriter out = response.getWriter();
         out.println("<html><body>");
         out.println("<ul>");
