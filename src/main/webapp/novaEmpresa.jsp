@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <%
-    String novaEmpresa = "IFPB";
+    String novaEmpresa = (String)request.getAttribute("empresa");
     System.out.println(novaEmpresa);
 %>
 <html>
