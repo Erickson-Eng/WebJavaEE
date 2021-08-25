@@ -5,16 +5,22 @@
   Time: 23:33
   To change this template use File | Settings | File Templates.
 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <%
     String novaEmpresa = (String)request.getAttribute("empresa");
-    System.out.println(novaEmpresa);
 %>
 <html>
 <head>
     <title>Title</title>
 </head>
 <body>
-<h1>Empresa   <%= (novaEmpresa) %>  cadastrada com sucesso!</h1>
+<c:if test= "${not empty empresa}">
+    Empresa ${ empresa } cadastrada com sucesso!
+</c:if>
+<c:if test= "${empty empresa}">
+    Nenhuma empresa cadastrada!
+</c:if>
 </body>
 </html>
