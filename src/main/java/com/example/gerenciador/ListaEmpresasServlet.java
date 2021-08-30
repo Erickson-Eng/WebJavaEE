@@ -9,7 +9,7 @@ import java.util.List;
 @WebServlet(name = "ListaEmpresasServlet", value = "/listaEmpresas")
 public class ListaEmpresasServlet extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Banco banco = new Banco();
         List<Empresa> lista = banco.getLista();
         request.setAttribute("empresas", lista);
