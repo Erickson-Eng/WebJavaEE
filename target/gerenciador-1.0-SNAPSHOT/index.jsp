@@ -9,7 +9,7 @@
     <div>
         <ul>
             <li>
-                <a href="listaEmpresas.jsp">Empresas</a>
+                <a href="listaEmpresas">Empresas</a>
             </li>
             <li>
                 <a href="formNovaEmpresa.jsp">Novas Empresas</a>
